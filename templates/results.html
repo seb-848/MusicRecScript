@@ -7,11 +7,11 @@
 <body>
     <h1>Results for "{{ artist }}"</h1>
     {% if artists %}
-        <u1>
+        <ul>
         {% for a in artists %}
             <li>{{ a }}</li>
         {% endfor %}
-        </u1>
+        </ul>
     {% else %}
         <p>No similar artists found..</p>
     {% endif % }
