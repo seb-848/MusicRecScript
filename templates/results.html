@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta char="UTF-8">
+    <meta charset="UTF-8">
     <title>Similar artists for {{artist}}</title>
 </head>
 <body>
-    <h1>Results for "{{ artist }}"</h1>
+    <h1>Results for {{ artist }}</h1>
     {% if artists %}
         <ul>
         {% for a in artists %}
@@ -14,7 +14,7 @@
         </ul>
     {% else %}
         <p>No similar artists found..</p>
-    {% endif % }
+    {% endif %}
     <p><a href="/">Search Again</a></p>
 </body>
 </html>
