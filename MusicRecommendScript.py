@@ -1,13 +1,12 @@
 from flask import Flask, request, jsonify
 import requests, os
-from dotenv import load_dotenv
 
-MusicRecommendScript = Flask(__name__)
+app = Flask(__name__)
 
 API_KEY = os.getenv("API_KEY")
 BASE_URL = 'http://ws.audioscrobbler.com/2.0'
 
-@MusicRecommendScript.route('/similar')
+@app.route("/similar")
 def  similar():
     artist = request.args.get("artist")
     if not artist:
