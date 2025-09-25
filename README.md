@@ -1,4 +1,4 @@
-#Last.fm Music Recommendation
+# Last.fm Music Recommendation
 Python + Docker project that calls Last.fm API to recommend similar artists
 
 docker build -t music-recommender .
